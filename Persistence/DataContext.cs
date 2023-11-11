@@ -18,8 +18,5 @@ namespace Persistence
 
         public DbSet<Price> Prices { get; set; }
 
-         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=string-price-tracker;Username=postgres;Password=test");
-
     }
 }

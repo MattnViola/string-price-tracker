@@ -4,6 +4,8 @@ namespace Domain
 {
     public class Price
     {
+        public Guid Id { get; set; }
+        
         public Guid ProductsId { get; set; }
 
         public Guid VendorsId { get; set; }
